@@ -1,0 +1,96 @@
+import 'dart:math';
+
+class Song {
+  var song1 = "Museo";
+  var song2 = "Dilaw";
+  var song3 = "Saan";
+  var song4 = "Palagi";
+  var song5 = "Pulso";
+  var song6 = "Rapstar";
+  var song7 = "Parehas Tayo";
+  var song8 = "This na malambing";
+  var song9 = "4AM";
+  var song10 = "Noche Buena";
+}
+
+class Playlist{
+  void MusicPlaylist(){
+    print('Music Playlist!');
+    print('Playlist 1: OPM Music');
+    print('Playlist 2: Rap Music');
+    print('Playlist 3: Favorites');
+    print('');
+
+  }  
+}
+
+class MusicFestival extends Song{
+  void MusicFest(){
+    print('OPM Music: ');
+    print(song1);
+    print(song2);
+    print(song3);
+    print(song4);
+    print(song5);
+    print('');
+    print('Rap Music: ');
+    print(song6);
+    print(song7);
+    print(song8);
+    print(song9);
+    print(song10);
+    print('');
+    print('Favorites: ');
+    print(song2);
+    print(song3);
+    print(song6);
+    print(song9);
+    print(song5);
+  }
+  
+}
+
+
+void main() {
+  print('Welcome to the Music Festival Playlist Manager!');
+  print('');
+  MusicFestival musicFestival = new MusicFestival();
+  Playlist playlist = new Playlist();
+  playlist.MusicPlaylist();
+  musicFestival.MusicFest();
+  print('');
+  
+  Random random = new Random();
+  int randomNumber = random.nextInt(10);
+  
+  if(randomNumber == 1){
+    print('~now playing: Museo');
+  }
+  if(randomNumber == 2){
+    print('~now playing: Dilaw');
+  }
+  if(randomNumber == 3){
+    print('~now playing: Saan');
+  }
+  if(randomNumber == 4){
+    print('~now playing: Palagi');
+  }
+  if(randomNumber == 5){
+    print('~now playing: Pulso');
+  }
+  if(randomNumber == 6){
+    print('~now playing: Rapstar');
+  }
+  if(randomNumber == 7){
+    print('~now playing: Parehas Tayo');
+  }
+  if(randomNumber == 8){
+    print('~now playing: This na malaming');
+  }
+  if(randomNumber == 9){
+    print('~now playing: 4AM');
+  }
+  if(randomNumber == 10){
+    print('~now playing: Noche Buena');
+  }
+}
